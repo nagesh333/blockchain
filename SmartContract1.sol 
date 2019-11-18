@@ -1,0 +1,25 @@
+// Solidity programming language version
+pragma solidity ^0.5.1;
+
+contract SmartContract1 {
+
+	// Variable declaration
+	// Statically typed
+	string value;
+
+	// Constructor
+	// Visibility = public
+	constructor(string memory _value) public {
+		// _value: a local variable
+		value = _value;
+	}
+
+	function get() public view returns(string memory) {
+		return value;
+	}
+
+	function set(string memory _value) public {
+		value = _value;
+	}
+
+}
